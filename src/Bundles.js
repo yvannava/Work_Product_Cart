@@ -17,8 +17,9 @@ const Bundles = (props)=>{
 
   const addTo=()=>{
     let len = updateCart.length;
+    let id = 0;
     if(cardQuantity > 0){
-   setUpdateCart([...updateCart, {product : props.productName, quantity : cardQuantity, price : props.price}])
+   setUpdateCart([...updateCart, { id : id++ ,product : props.productName, quantity : cardQuantity, price : props.price}])
     }else{
        console.log(props.productName + " quantity is 0")
     }

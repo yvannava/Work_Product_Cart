@@ -7,6 +7,7 @@ import SingleProduct from "./pages/SingleProduct";
 import {Cart} from "./pages/Cart";
 import BundleKits from "./pages/BundleKits";
 import { createContext, useState } from "react";
+import { Home } from "./pages/Home";
 
 export const QuantityContext = createContext();
 export const UpdateCartContext = createContext();
@@ -21,6 +22,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Navbar/>}>
+          <Route path="" element={<Home/>}/>
         <Route path="singleProduct" element={<SingleProduct/>}/>
         <Route path="bundles" element={<BundleKits/>}/>
         <Route path="cart" element= {<Cart/>} > </Route>

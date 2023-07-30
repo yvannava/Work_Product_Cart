@@ -3,36 +3,39 @@ import { UpdateCartContext } from "../App"
 import { formatter } from "../Utilities/CurrencyFormater"
 import Product from "../Product"
 
-export const Cart = ()=>{
+
+
+export const Cart = (props)=>{
     const [updateCart,setUpdateCart] = useContext(UpdateCartContext)
     console.log("cart" + {updateCart})
     let productPrice;
     const totalPrice = [];
-    console.log(totalPrice)
+    
     return < >
     <h1 className="d-flex justify-content-center">Cart Summary</h1>
-    <span className="d-flex justify-content-between">
-                <h4>Product</h4>
-                <p>Quantity</p>
-                <h5>Price</h5>
-                <p>Total</p>
+    <span className="d-flex justify-content-between p-2">
+                <h4 className="col">Product</h4>
+                <h4 className="col">Quantity</h4>
+                <h4 className="col">Price</h4>
+                <h4 className="col">Total</h4>
                 </span>
-    <div className="container text-align-justify">
+    <div className=" text-start">
         {updateCart.map(
             cart =>
-            <div className="d-flex justify-content-between" >
-                <h4>{cart.product}</h4>
-                <p className="align-self-center">{cart.quantity}</p>
-                <h5>{cart.price == null ? " ": formatter.format(cart.price)}</h5>
+            <div className="row" style={{width : "100vw"}}>
+                <h5 className="col bg-success-subtle" >{cart.product}</h5>
+                <p className="col" style={{Width : "5vw", textAlign : "center", justifySelf : "center" }}>{cart.quantity}</p>
+                <h5 className="col">{cart.price == null ? " ": formatter.format(cart.price)}</h5>
                 {totalPrice.push(productPrice = cart.price * cart.quantity)}
-                <p>{"null"}</p>
+                <p className="col">{"price"}</p>
+                
             </div>
             
         )}
     </div>
    <hr></hr>
    <span>
-    <h1>Total:{productPrice = isNaN ? "": productPrice} </h1>
+    {/* <h1>Total:{productPrice = isNaN ? "": productPrice} </h1> */}
     
    </span>
     </>
