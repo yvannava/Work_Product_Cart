@@ -13,7 +13,7 @@ export const QuantityContext = createContext();
 export const UpdateCartContext = createContext();
 function App() {
   const [quantity,setQuantity] = useState(0);
-  const [updateCart,setUpdateCart] = useState([{}])
+  const [updateCart,setUpdateCart] = useState([])
   return (
   <div className="App bg-light">
 <UpdateCartContext.Provider value={[updateCart,setUpdateCart]}> 

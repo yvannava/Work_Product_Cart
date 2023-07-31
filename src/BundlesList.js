@@ -37,26 +37,26 @@ export const bundles = [
     },
     {
         id : 7,
-        productName : "ROTADENT",
-        desc : "Includes: Easy-grip brush handle. Perio & Ortho tip brush.charger base with cord and travel case.",
+        productName : "GINGIVITIS Care Kit",
+        desc : "1.ROTADENT(+Tax) 2. STANNOUSE FLUORIDE RINSE(No Tax)",
         price : 145.00
     },
     {
         id : 8,
-        productName : "ROTADENT",
-        desc : "Includes: Easy-grip brush handle. Perio & Ortho tip brush.charger base with cord and travel case.",
+        productName : "PROPHY Care Kit",
+        desc : "1.ROTADENT(+Tax) 2. 1.1% NEUTRAL SODIUM FLUORIDE GEL(No Tax)",
         price : 140.00
     },
     {
         id : 9,
-        productName : "ROTADENT",
-        desc : "Includes: Easy-grip brush handle. Perio & Ortho tip brush.charger base with cord and travel case.",
+        productName : " WHITENING Care Kit",
+        desc : "OPALESCENCE GO 10-PACK(+Tax) 2. WHITENING & CARE TOOTHPAST(+Tax)",
         price : 75.00
     },
     {
         id : 10,
-        productName : "ROTADENT",
-        desc : "Includes: Easy-grip brush handle. Perio & Ortho tip brush.charger base with cord and travel case.",
+        productName : "DRY MOUTH RELIEF & ENAMEL AID KIT",
+        desc : "1. MI PASTE PLUS(+Tax) 2. GC DRY MOUTH GEL",
         price : 40.00
     }
 ]
