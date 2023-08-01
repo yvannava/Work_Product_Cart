@@ -13,6 +13,7 @@ export const Cart = (props)=>{
     let grandTotal = 0;
     return < >
     <h1 className="d-flex justify-content-center" style={{color : "purple"}}>Cart Summary</h1>
+    <a>Print</a>
     <span className="d-flex justify-content-between mb-2" style={{backgroundColor : "plum"}}>
                 <h2 className="col-4">Product</h2>
                 <h2 className="col-2">Quantity</h2>
